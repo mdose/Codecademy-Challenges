@@ -80,3 +80,18 @@ print is_prime(5)
 print is_prime(18)
 print is_prime(11)
 print is_prime(21)
+
+# -------------------------------------------------------------------
+# Define a function called reverse that takes a string textand returns
+# that string in reverse. For example: reverse("abcd") should return "dcba".
+# You may not use reversed or [::-1] to help you with this.
+
+def reverse(text):
+    word = ""
+    l = len(text) - 1
+    while l >= 0:
+        word = word + text[l]
+        l -= 1
+    return word
+
+print reverse("Python!")
