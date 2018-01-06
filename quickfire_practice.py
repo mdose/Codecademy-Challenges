@@ -1,3 +1,5 @@
+# return true if a number is even
+
 def is_even(x):
   if x % 2 == 0:
     return True
@@ -41,3 +43,20 @@ def digit_sum(n):
   return sum
 
 print digit_sum(434)
+
+# -------------------------------------------------------------------
+# Define a function factorial that takes an integer x as input.
+# Calculate and return the factorial of that number.
+# factorial(4) would equal 4 * 3 * 2 * 1, which is 24.
+# factorial(1) would equal 1.
+# factorial(3) would equal 3 * 2 * 1, which is 6.
+
+def factorial(x):
+  product = 1
+  for num in range (1, x + 1):
+    product *= num
+  return product
+
+print factorial(4)
+print factorial(1)
+print factorial(3)
