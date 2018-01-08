@@ -165,3 +165,23 @@ def count(sequence, item):
 	return counter
 
 print count([1,2,1,1], 1)
+
+# -------------------------------------------------------------------
+# Write a function called median that takes a list as an input and
+# returns the median value of the list. For example: median([1, 1, 2])
+# should return 1.
+# The list can be of any size and the numbers are not guaranteed to be
+# in any particular order. Make sure to sort it!
+# If the list contains an even number of elements, your function should
+# return the average of the middle two.
+
+def median(lst):
+	sorted_lst = sorted(lst)
+	if len(sorted_lst) % 2 != 0:
+		return sorted_lst[len(sorted_lst) / 2]
+	else:
+		return float(sorted_lst[len(sorted_lst)/2] + sorted_lst[(len(sorted_lst)/2) - 1])/2
+
+print median([1,1,2])
+print median([1,1,2,3,5,6])
+print median([4, 5, 7, 3, 4])
