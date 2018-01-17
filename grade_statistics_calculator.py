@@ -12,8 +12,7 @@ def grades_sum(scores):
     return score_sum
 
 def grades_average(grades_input):
-    sum = grades_sum(grades_input)
-    return sum / float(len(grades_input))
+    return grades_sum(grades_input) / float(len(grades_input))
 
 def grades_variance(scores):
     average = grades_average(scores)
